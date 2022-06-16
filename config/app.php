@@ -123,6 +123,17 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    'providers' => [ 
+        .... 
+        Barryvdh\DomPDF\ServiceProvider::class, 
+       ], 
+        
+        
+       'aliases' => [ 
+        .... 
+        'PDF' => Barryvdh\DomPDF\Facade::class, 
+       ]
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
